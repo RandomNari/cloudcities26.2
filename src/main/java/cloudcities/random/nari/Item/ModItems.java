@@ -20,7 +20,7 @@ public class ModItems {
 
         return item;
     }
-    public static final Item cotton_candy = register(ModItemIds.COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().build()));
+    public static final Item cotton_candy = register(ModItemIds.COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                 .register((creativeTab) -> creativeTab.accept(ModItems.cotton_candy));
