@@ -23,7 +23,10 @@
 		],
 		"fabric-datagen": [
 			"cloudcities.random.nari.client.CloudcitiesDataGenerator"
-		]
+		],
+        "terrablender" : [
+          "cloudcities.random.nari.CloudMod"
+        ]
 	},
 	"mixins": [
 		"cloudcities.mixins.json",
