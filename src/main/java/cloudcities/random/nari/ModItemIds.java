@@ -17,4 +17,8 @@ public class ModItemIds {
     return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
 }
     public static final ResourceKey<Item> COTTON_CANDY = create("cotton_candy");
+    public static final ResourceKey<Item> RED_COTTON_CANDY = create("red_cotton_candy");
+    public static final ResourceKey<Item> BLUE_COTTON_CANDY = create("blue_cotton_candy");
+    public static final ResourceKey<Item> YELLOW_COTTON_CANDY = create("yellow_cotton_candy");
+    public static final ResourceKey<Item> PINK_COTTON_CANDY = create("pink_cotton_candy");
 }

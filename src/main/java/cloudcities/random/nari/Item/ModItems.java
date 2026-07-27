@@ -21,8 +21,22 @@ public class ModItems {
         return item;
     }
     public static final Item cotton_candy = register(ModItemIds.COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
+    public static final Item red_cotton_candy = register(ModItemIds.RED_COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
+    public static final Item blue_cotton_candy = register(ModItemIds.BLUE_COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
+    public static final Item yellow_cotton_candy = register(ModItemIds.YELLOW_COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
+    public static final Item pink_cotton_candy = register(ModItemIds.PINK_COTTON_CANDY, Item::new, new Item.Properties().food(new FoodProperties.Builder().nutrition(4).saturationModifier(4).build()));
+
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
                 .register((creativeTab) -> creativeTab.accept(ModItems.cotton_candy));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+                .register((creativeTab) -> creativeTab.accept(ModItems.red_cotton_candy));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+                .register((creativeTab) -> creativeTab.accept(ModItems.blue_cotton_candy));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+                .register((creativeTab) -> creativeTab.accept(ModItems.pink_cotton_candy));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.FOOD_AND_DRINKS)
+                .register((creativeTab) -> creativeTab.accept(ModItems.yellow_cotton_candy));
     }
+
 }
