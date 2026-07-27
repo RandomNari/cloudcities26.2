@@ -1,5 +1,6 @@
 package cloudcities.random.nari;
 
+import cloudcities.random.nari.Item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
 import net.minecraft.resources.Identifier;
@@ -20,9 +21,12 @@ public class Cloudcities implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
-
+        ModItems.initialize();
 		LOGGER.info("Hello Fabric world!");
+
+
 	}
+
 
 	public static Identifier id(String path) {
 		return Identifier.fromNamespaceAndPath(MOD_ID, path);
