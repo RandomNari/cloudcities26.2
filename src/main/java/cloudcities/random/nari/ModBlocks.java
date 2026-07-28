@@ -47,7 +47,25 @@ public class ModBlocks {
     public static final Block CLOUD = register(
             "cloud",
             CloudBlock::new,
+            BlockBehaviour.Properties.of().destroyTime(2.0f).sound(SoundType.POWDER_SNOW)
+                    .friction(0.8F)
+                    .bounceRestitution(1.0F)
+                    .noOcclusion(),
+            true
+    );
+    public static final Block BLUE_CLOUD = register(
+            "blue_cloud",
+            CloudBlock::new,
             BlockBehaviour.Properties.of().destroyTime(4.0f).sound(SoundType.POWDER_SNOW)
+                    .friction(1.1F)
+                    .bounceRestitution(10.0F)
+                    .noOcclusion(),
+            true
+    );
+    public static final Block BREEZE_INFUSED_DIAMOND_CLOUD = register(
+            "breeze_infused_diamond_cloud",
+            CloudBlock::new,
+            BlockBehaviour.Properties.of().destroyTime(2.0f).sound(SoundType.POWDER_SNOW)
                     .friction(0.8F)
                     .bounceRestitution(1.0F)
                     .noOcclusion(),
@@ -58,6 +76,12 @@ public class ModBlocks {
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
             creativeTab.accept(ModBlocks.CLOUD.asItem());
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(ModBlocks.BLUE_CLOUD.asItem());
+        });
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {
+            creativeTab.accept(ModBlocks.BREEZE_INFUSED_DIAMOND_CLOUD.asItem());
         });
     }
 

@@ -16,5 +16,6 @@ public class ModBlockItemIds {
         return BlockItemId.create(id, id);
     }
     public static final BlockItemId CLOUD = create("cloud");
-
+    public static final BlockItemId BLUE_CLOUD = create("blue_cloud");
+    public static final BlockItemId BREEZE_INFUSED_DIAMOND_CLOUD = create("breeze_infused_diamond_cloud");
 }

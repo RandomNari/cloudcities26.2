@@ -7,5 +7,7 @@
   "block.cloudcities.cloud": "Cloud",
   "item.cloudcities.breeze_infused_stick": "Breeze Infused Stick",
   "item.cloudcities.breeze_infused_diamond": "Breeze Infused Diamond",
-  "item.cloudcities.breeze_hoe" : "Breeze Hoe"
+  "item.cloudcities.breeze_hoe" : "Breeze Hoe",
+  "block.cloudcities.breeze_infused_diamond_cloud": "Breeze Infused Diamond Cloud",
+  "block.cloudcities.blue_cloud": "Blue Cloud"
 }
