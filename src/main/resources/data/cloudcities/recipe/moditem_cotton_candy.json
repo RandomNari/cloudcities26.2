@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#",
+    " / "
+  ],
+  "key": {
+    "#": "minecraft:sugar",
+    "C": "cloudcities:cloud",
+    "/": "minecraft:stick"
+  },
+  "result": {
+    "id": "cloudcities:cotton_candy"
+  }
+}
