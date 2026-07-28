@@ -14,6 +14,7 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.TransparentBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.MapColor;
 
 import java.util.function.Function;
 
@@ -45,10 +46,14 @@ public class ModBlocks {
 
     public static final Block CLOUD = register(
             "cloud",
-            TransparentBlock::new,
-            BlockBehaviour.Properties.of().destroyTime(4.0f).sound(SoundType.POWDER_SNOW),
+            CloudBlock::new,
+            BlockBehaviour.Properties.of().destroyTime(4.0f).sound(SoundType.POWDER_SNOW)
+                    .friction(0.8F)
+                    .bounceRestitution(1.0F)
+                    .noOcclusion(),
             true
     );
+
 
     public static void initialize() {
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.BUILDING_BLOCKS).register((creativeTab) -> {

@@ -9,7 +9,7 @@ import terrablender.api.SurfaceRuleManager;
 
 public class CloudSurfaceRuleData
 {
-    private static final SurfaceRules.RuleSource POLISHED_DIORITE = makeStateRule(Blocks.POLISHED_DIORITE);
+    private static final SurfaceRules.RuleSource DIRT = makeStateRule(Blocks.DIRT);
     private static final SurfaceRules.RuleSource CLOUD = makeStateRule(ModBlocks.CLOUD);
 
     protected static SurfaceRuleManager.RuleBuilder makeRules()
@@ -21,7 +21,7 @@ public class CloudSurfaceRuleData
             SurfaceRules.RuleSource grassSurface =
                     SurfaceRules.sequence(
                             SurfaceRules.ifTrue(isAtOrAboveWaterLevel, CLOUD),
-                            POLISHED_DIORITE
+                            DIRT
                     );
 
             return SurfaceRules.sequence(
