@@ -46,7 +46,7 @@ public class ModBlocks {
     public static final Block CLOUD = register(
             "cloud",
             TransparentBlock::new,
-            BlockBehaviour.Properties.of().sound(SoundType.POWDER_SNOW),
+            BlockBehaviour.Properties.of().destroyTime(4.0f).sound(SoundType.POWDER_SNOW),
             true
     );
 

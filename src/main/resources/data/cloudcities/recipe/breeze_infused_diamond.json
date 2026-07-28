@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:wind_charge",
+    "C": "minecraft:diamond"
+
+  },
+  "result": {
+    "id": "cloudcities:breeze_infused_diamond"
+  }
+}

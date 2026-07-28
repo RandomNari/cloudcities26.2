@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " CC",
+    " # ",
+    " # "
+  ],
+  "key": {
+    "#": "cloudcities:breeze_infused_stick",
+    "C": "cloudcities:breeze_infused_diamond"
+
+  },
+  "result": {
+    "id": "cloudcities:breeze_hoe"
+  }
+}
