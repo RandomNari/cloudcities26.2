@@ -21,4 +21,5 @@ public class ModItemIds {
     public static final ResourceKey<Item> BLUE_COTTON_CANDY = create("blue_cotton_candy");
     public static final ResourceKey<Item> YELLOW_COTTON_CANDY = create("yellow_cotton_candy");
     public static final ResourceKey<Item> PINK_COTTON_CANDY = create("pink_cotton_candy");
+    public static final ResourceKey<Item> BREEZE_INFUSED_STICK = create("breeze_infused_stick");
 }
