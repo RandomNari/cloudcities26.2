@@ -23,4 +23,5 @@ public class ModItemIds {
     public static final ResourceKey<Item> PINK_COTTON_CANDY = create("pink_cotton_candy");
     public static final ResourceKey<Item> BREEZE_INFUSED_STICK = create("breeze_infused_stick");
     public static final ResourceKey<Item> BREEZE_INFUSED_DIAMOND = create("breeze_infused_diamond.json");
+    public static final ResourceKey<Item> BREEZE_HOE = create("breeze_hoe");
 }
