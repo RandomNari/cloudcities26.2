@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " # ",
+    "#C#",
+    " # "
+  ],
+  "key": {
+    "#": "minecraft:yellow_dye",
+    "C": "cloudcities:cotton_candy"
+
+  },
+  "result": {
+    "id": "cloudcities:yellow_cotton_candy"
+  }
+}
