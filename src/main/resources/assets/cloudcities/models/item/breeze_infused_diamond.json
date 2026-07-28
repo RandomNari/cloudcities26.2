@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "cloudcities:item/breeze_infused_diamond"
+  }
+}
